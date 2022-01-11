@@ -23,7 +23,7 @@ import { UsersModule } from './users/users.module';
           database: dbConfig.database,
           entities: [__dirname + '/**/*.entity{.ts,.js}'],
           synchronize: true,
-        }
+        };
       },
       inject: [ConfigService],
     }),
@@ -36,8 +36,8 @@ import { UsersModule } from './users/users.module';
         transform: true,
         whitelist: true,
         forbidNonWhitelisted: true,
-      })
-    }
+      }),
+    },
   ],
 })
 export class AppModule {}

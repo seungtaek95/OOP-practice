@@ -16,6 +16,6 @@ export class CreateUserDto {
       this.email,
       this.password,
       this.name,
-    )
+    );
   }
 }

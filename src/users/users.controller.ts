@@ -11,6 +11,6 @@ export class UsersController {
   @Post()
   async create(@Body() createUserDto: CreateUserDto) {
     const id = await this.usersService.create(createUserDto);
-    return { id }
+    return { id };
   }
 }
