@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres:13
+    container_name: oop-practice-postgres
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    environment:
+      - "POSTGRES_DB=${DB_DATABASE:-postgres}"
+      - "POSTGRES_PASSWORD=${DB_PASSWORD:-postgres}"
+    volumes:
+      - ./data:/var/lib/postgresql/data
